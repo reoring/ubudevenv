@@ -1,0 +1,16 @@
+---
+
+- hosts: all
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
+  become: yes
+
+  vars_files:
+   - vars/vars.yaml
+   - vars/apt-packages.yaml
+   - vars/apt-repositories.yaml
+
+  roles:
+   - packages
+   - tools
+   - config-files

@@ -1,0 +1,24 @@
+---
+
+apt_packages_for_docker:
+  - apt-transport-https
+  - ca-certificates
+  - curl
+  - gnupg
+  - lsb-release
+
+apt_packages_to_install:
+  - python3-pip
+  - chromium-browser
+  - docker-ce
+  - git
+  - python
+  - subversion
+  - terminator
+  - vagrant
+  - virtualbox
+
+apt_packages_to_remove:
+  - docker
+  - docker-engine
+  - docker.io
